@@ -1,0 +1,7 @@
+pandas
+undetected-chromedriver
+selenium
+bs4
+lxml
+requests
+openpyxl

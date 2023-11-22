@@ -1,0 +1,6 @@
+CREATE A NEW LOCAL REPO -> git init
+ADD FILES TO LOCAL REPO -> git add <filename> OR git add . -> Add all files in directory
+CREATE A LOCAL COMMIT -> git commit -m <description>
+ADD A REMOTE REPOSITORY -> git remote add <name> <remote repo link>
+PUSH LOCAL REPO TO GITHUB -> git push <name>
+ 

@@ -1,0 +1,16 @@
+annotated-types==0.5.0
+numpy==1.25.0
+pandas==2.0.3
+pyaes==1.6.1
+pyasn1==0.5.0
+pydantic==2.0.2
+pydantic_core==2.1.2
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+pytz==2023.3
+readchar==4.0.3
+rsa==4.9
+six==1.16.0
+Telethon==1.25.4
+typing_extensions==4.7.1
+tzdata==2023.3

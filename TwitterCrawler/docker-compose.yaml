@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  redisdb:
+    image: redis
+    ports:
+      - 6379:6379
+    networks:
+      - crawlernet
+  
+  crawlerapi:
+    build: .
+    privileged: true
+    command: uvicorn --app-dir /app/TwitterCrawler --host 0.0.0.0 api:api
+    depends_on:
+      - redisdb
+    networks:
+      - crawlernet
+    ports:
+      - 8000:8000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  crawlernet:
+    external:
+      name: crawlernet

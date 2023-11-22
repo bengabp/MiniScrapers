@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Crawler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab386edd93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <div class="main-body">
+        <h1 class="">Twitter Crawler</h1>
+        <button class="action-btn" id="new-task-btn">
+            New
+        </button>
+        <div class="tasks" id="tasks">
+        </div>
+    </div>
+    <div id="new-task-entry">
+        <div>
+            <span>Create new search</span>
+            <input id="search-query-entry" placeholder="Enter search query ..." autocomplete="false">
+            <div id="new-search-settings">
+                <div>
+                    <i class="fa-solid fa-repeat"></i>
+                    <span class="mark-tag" data-set-label="retweets">20</span>
+                    <input type="range" min="20" max="3000" value="20" data-tag="retweets">
+                </div>
+                <div>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span class="mark-tag" data-set-label="likes">20</span>
+                    <input type="range" min="20" max="3000" value="20" data-tag="likes">
+                </div>
+                <div>
+                    <i class="fa-regular fa-comment"></i>
+                    <span class="mark-tag" data-set-label="comments">20</span>
+                    <input type="range" min="20" max="3000" value="20" data-tag="comments">
+                </div>
+            </div>
+            <div class="button-row">
+                <button class="action-btn bg-red">
+                    Close
+                </button>
+                <button class="action-btn" id="search-btn">
+                    Search
+                </button>
+            </div>
+        <div>
+    </div>
+
+    <script src="/static/js/index.js"></script>
+</body>
+</html>
